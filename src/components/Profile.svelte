@@ -1,6 +1,6 @@
 <script>
-  export let nickname;
-  export let name;
+  // export let nickname;
+  // export let name;
 </script>
 
 <style>

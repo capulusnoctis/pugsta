@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "webpack-build": "webpack --mode production",
+    "build": "sapper build",
+    "webpack-start": "webpack-dev-server --open --mode development",
+    "export": "sapper export",
+    "dev": "sapper dev",
+    "start": "node __sapper__/build"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "compression": "^1.7.4",
+    "polka": "^0.5.2",
+    "sirv": "^1.0.6",
     "svelte": "^3.20.1"
   },
   "devDependencies": {
@@ -18,9 +25,10 @@
     "@babel/preset-env": "^7.9.5",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.2.0",
+    "sapper": "^0.28.6",
     "svelte-loader": "^2.13.6",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   }
 }
